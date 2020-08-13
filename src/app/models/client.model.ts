@@ -1,0 +1,52 @@
+export class Client {
+    static clientFromResponse(obj: Object){
+        return new Client(
+            obj['a'],
+            obj['b'],
+            obj['c'],
+            obj['d'],
+            obj['e'],
+            obj['f'],
+            obj['g'],
+            obj['h'],
+            obj['i'],
+            obj['j'],
+            obj['k'],
+            obj['l'],
+            obj['m'],
+            obj['n'],
+            obj['o'],
+            obj['p'],
+            obj['q'],
+            obj['r'],
+            obj['s'],
+            obj['t'],
+            obj['u'],
+            obj['addressee'],
+        )
+    }
+
+    constructor(
+        public clientCode: string,
+        public saleOrg: string,
+        public clientName: string,
+        public ruc: string,
+        public telephone: string,
+        public mailAddress: string,
+        public paymentConditions: string,
+        public creditLine: string,
+        public balanceAvailable: string,
+        public committedTotal: string,
+        public address: string,
+        public commercialTreatmentCode: string,
+        public commercialTreatment: string,
+        public businessDetail: string,
+        public creditLock: string,
+        public officeCode: string,
+        public businessFeature: string,
+        public collectorCode: string,
+        public collectorName: string,
+        public longitude: string,
+        public latitude: string,
+        public addressee: any[]) { }
+}
